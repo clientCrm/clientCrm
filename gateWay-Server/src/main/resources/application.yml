@@ -1,0 +1,44 @@
+###################################微服务配置########################
+server:
+  port: 10010
+spring:
+  application:
+    name: gateway-server
+#eureka配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka/
+    registry-fetch-interval-seconds: 5  #没5秒获取服务列表
+
+#feign配置，集成了ribbon 跟 restemplate跟熔断器
+ribbon:                       #开启恶汉加载模式，解决无法搜索到某个服务的bug
+  eager-load:
+    enabled: true
+    clients: bangong-server  kehu-server xiangmu-server manager-server   #恶汉加载的服务名
+  ReadTimeout: 8000
+  ConnectTimeout: 8000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+#配置zuul网关的服务 - 请求映射
+zuul:
+  routes:
+    bangong-server: /bangong/**    #/**zuul.routes.bangong-server`：给服务提供者 bangong-server 设置映射
+    kehu-server: /kehu/**      #/**zuul.routes.kehu-server`：给服务提供者 kehu-server 设置映射
+    xiangmu-server: /xiangmu/**  #/**zuul.routes.xiangmu-server`：给服务提供者 xiangmu-server 设置映射
+    manager-server: /manager/**  #/**zuul.routes.manager-server`：给服务提供者 manager-server 设置映射
+  prefix: /crm
+
+#   service-provider: # 这里是路由id，随意写
+#        path: /bangong/** # 这里是映射路径
+#        url: http://127.0.0.1:8000 # 映射路径对应的实际url地址
+#  prefix: /crm
+
+#########################################
+#low写法
+

@@ -1,0 +1,54 @@
+server:
+  port: 8000
+  compression:   #配置浏览器送请求到manager-server服务的请求和响应压缩
+    enabled: true   #开启压缩
+    mime-types: application/json,application/,xml,text/html,text/xml,text/plain  #压缩的请求和响应类型
+spring:
+  application:
+    name: manager-server
+  datasource:
+    url: jdbc:mysql://localhost:3306/leyou
+    username: root
+    password: zkz524300@
+    hikari:
+      max-lifetime: 28830000 # 一个连接的生命时长（毫秒），超时而且没被使用则被释放（retired），缺省:30分钟，建议设置比数据库超时时长少30秒，参考MySQL wait_timeout参数（show variables like '%timeout%';）
+      maximum-pool-size: 9 # 连接池中允许的最大连接数。缺省值：10；推荐的公式：((core_count * 2) + effective_spindle_count)
+#eureka配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+    #registry-fetch-interval-seconds: 15 #默认为30，开发环境中设置小一点，能够快速得到服务的最新状态
+  instance:
+    lease-renewal-interval-in-seconds: 5 # 5秒钟发送一次心跳,生产环境去掉这两个配置
+    lease-expiration-duration-in-seconds: 10 # 10秒不发送就过期
+#熔断器配置
+hystrix:
+  command:
+    default:
+      execution:
+         isolation:
+            thread:
+              timeoutInMilliseconds: 7000 # 设置hystrix的超时时间为6000ms,说明请求超过6秒就会返回错误信息，默认为1秒
+circuitBreaker:
+  requestVolumeThreshold: 10  #触发熔断的最小请求次数，默认20
+  sleepWindowInMilliseconds: 10000  #休眠时长，默认是5000毫秒
+  errorThresholdPercentage :  50 #触发熔断的失败请求最小占比，默认50%
+#feign配置，集成了ribbon 跟 restemplate跟熔断器
+ribbon:                       #开启恶汉加载模式，解决无法搜索到某个服务的bug
+  eager-load:
+    enabled: true
+    clients: bangong-server  kehu-server xiangmu-server   #恶汉加载的服务名
+feign:
+  hystrix:
+    enabled: true      #开启feign的熔断功能
+#feign  GZIP配置为服务调用时，数据传输启用GZIP压缩功能，减少传输时间
+  compression:
+    request:
+      enabled: true  #开启请求GZIP压缩
+      mime-types: text/xml,application/xml,application/json #配置压缩支持的 MIME TYPE
+      min-request-size: 512  #配置压缩数据大小的最小阀值，默认 2048
+    response:
+      enabled: true   #开启相应GZIP压缩
+
+#######################mabatic配置##################################################

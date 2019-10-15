@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bangong-Server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bangong-Server/bangong-comment-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bangong-Server/bangong-item-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/batchUpload-Server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-Server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateWay-Server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kehu-Server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/manager-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/xiangmu-Server" charset="UTF-8" />
+  </component>
+</project>

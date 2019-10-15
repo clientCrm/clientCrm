@@ -6,15 +6,27 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="bangong-comment-server" />
+        <module name="kehu-Server" />
         <module name="bangong-item-server" />
         <module name="batchUpload-Server" />
-        <module name="eureka-Server" />
-        <module name="gateWay-Server" />
-        <module name="kehu-Server" />
-        <module name="manager-server" />
         <module name="xiangmu-Server" />
+        <module name="eureka-Server" />
+        <module name="bangong-comment-server" />
+        <module name="manager-server" />
+        <module name="gateWay-Server" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="bangong-comment-server" options="-parameters" />
+      <module name="bangong-item-server" options="-parameters" />
+      <module name="batchUpload-Server" options="-parameters" />
+      <module name="eureka-Server" options="-parameters" />
+      <module name="gateWay-Server" options="-parameters" />
+      <module name="kehu-Server" options="-parameters" />
+      <module name="manager-server" options="-parameters" />
+      <module name="xiangmu-Server" options="-parameters" />
+    </option>
   </component>
 </project>

@@ -2,7 +2,7 @@ server:
   port: 8084
 spring:
   application:
-    name: batch-upload
+    name: batchUpload-server
   servlet:
     multipart:
       max-file-size: 300MB

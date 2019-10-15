@@ -12,10 +12,12 @@
         <module>eureka-Server</module>
         <module>bangong-Server</module>
         <module>kehu-Server</module>
-        <module>xiangmu-Server</module>
         <module>batchUpload-Server</module>
         <module>gateWay-Server</module>
         <module>manager-server</module>
+        <module>kehu-Server</module>
+        <module>item-server</module>
+        <module>item-server</module>
     </modules>
 
     <!--父项目版本控制，所有的springboot同一版本管理-->

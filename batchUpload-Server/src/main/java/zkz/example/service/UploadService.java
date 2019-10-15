@@ -52,7 +52,8 @@ public class UploadService {
             file.transferTo(new File("C:\\images\\" + imgName+"."+suffix));
 
             // 生成url地址，返回
-            return "http://image.leyou.com/" +imgName+"."+suffix;
+            return "http://crm.image.com/images/" +imgName+"."+suffix;
+
         } catch (IOException e) {
             LOGGER.info("服务器内部错误：{}", originalFilename);
             e.printStackTrace();
@@ -81,10 +82,10 @@ public class UploadService {
                 // 保存到服务器
                 String suffix=originalFilename.substring(originalFilename.lastIndexOf(".")+1);
                 String batchName=RandomUtil.randomUUID();
-                file.transferTo(new File("C:\\batch\\" + batchName+"."+suffix));
+                file.transferTo(new File("C:\\batchs\\" + batchName+"."+suffix));
 
                 // 生成url地址，返回
-                return "http://image.leyou.com/" +batchName+"."+suffix;
+                return "http://crm.image.com/batchs/" +batchName+"."+suffix;
             } catch (IOException e) {
                 LOGGER.info("服务器内部错误：{}", originalFilename);
                 e.printStackTrace();

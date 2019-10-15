@@ -1,5 +1,5 @@
 server:
-  port: 8000
+  port: 8082
   compression:   #配置浏览器送请求到manager-server服务的请求和响应压缩
     enabled: true   #开启压缩
     mime-types: application/json,application/,xml,text/html,text/xml,text/plain  #压缩的请求和响应类型
@@ -38,7 +38,7 @@ circuitBreaker:
 ribbon:                       #开启恶汉加载模式，解决无法搜索到某个服务的bug
   eager-load:
     enabled: true
-    clients: bangong-server  kehu-server xiangmu-server   #恶汉加载的服务名
+    clients:  kehu-server item-server bangong-server upload-server  #恶汉加载的服务名
 feign:
   hystrix:
     enabled: true      #开启feign的熔断功能

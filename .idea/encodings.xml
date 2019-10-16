@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bangong-Server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bangong-Server/bangong-comment-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bangong-Server/bangong-item-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/batchUpload-Server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-Server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gateWay-Server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/item-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/item-server/item-common-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/item-server/item-server-crm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kehu-Server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kehu-Server/kehu-common-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kehu-Server/kehu-item-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/manager-server" charset="UTF-8" />
+  </component>
+</project>

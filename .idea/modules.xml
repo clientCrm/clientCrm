@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bangong-Server/bangong-Server.iml" filepath="$PROJECT_DIR$/bangong-Server/bangong-Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bangong-Server/bangong-comment-server/bangong-comment-server.iml" filepath="$PROJECT_DIR$/bangong-Server/bangong-comment-server/bangong-comment-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bangong-Server/bangong-item-server/bangong-item-server.iml" filepath="$PROJECT_DIR$/bangong-Server/bangong-item-server/bangong-item-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/batchUpload-Server/batchUpload-Server.iml" filepath="$PROJECT_DIR$/batchUpload-Server/batchUpload-Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clientCrm.iml" filepath="$PROJECT_DIR$/clientCrm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-Server/eureka-Server.iml" filepath="$PROJECT_DIR$/eureka-Server/eureka-Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateWay-Server/gateWay-Server.iml" filepath="$PROJECT_DIR$/gateWay-Server/gateWay-Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/item-server/item-common-server/item-common-server.iml" filepath="$PROJECT_DIR$/item-server/item-common-server/item-common-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/item-server/item-server.iml" filepath="$PROJECT_DIR$/item-server/item-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/item-server/item-server-crm/item-server-crm.iml" filepath="$PROJECT_DIR$/item-server/item-server-crm/item-server-crm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kehu-Server/kehu-Server.iml" filepath="$PROJECT_DIR$/kehu-Server/kehu-Server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kehu-Server/kehu-common-server/kehu-common-server.iml" filepath="$PROJECT_DIR$/kehu-Server/kehu-common-server/kehu-common-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kehu-Server/kehu-item-server/kehu-item-server.iml" filepath="$PROJECT_DIR$/kehu-Server/kehu-item-server/kehu-item-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/manager-server/manager-server.iml" filepath="$PROJECT_DIR$/manager-server/manager-server.iml" />
+    </modules>
+  </component>
+</project>

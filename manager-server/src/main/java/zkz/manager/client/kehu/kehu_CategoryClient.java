@@ -1,10 +1,11 @@
 package zkz.manager.client.kehu;
 
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 import zkz.kehu.common.api.kehuCategoryApi;
 
-//@Service
+@Service
 @FeignClient(value = "kehu-server")    //声明该接口是一个伪装feign接口,声明调用的微服务名
 @RequestMapping("kehu")
 public interface kehu_CategoryClient extends kehuCategoryApi {

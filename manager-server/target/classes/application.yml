@@ -29,7 +29,7 @@ hystrix:
       execution:
          isolation:
             thread:
-              timeoutInMilliseconds: 30000 # 设置hystrix的超时时间为1000ms,说明请求超过6秒就会返回错误信息，默认为1秒
+              timeoutInMilliseconds: 7000 # 设置hystrix的超时时间为1000ms,说明请求超过6秒就会返回错误信息，默认为1秒
 circuitBreaker:
   requestVolumeThreshold: 10  #触发熔断的最小请求次数，默认20
   sleepWindowInMilliseconds: 10000  #休眠时长，默认是5000毫秒
